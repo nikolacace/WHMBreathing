@@ -33,7 +33,7 @@
             <Label
                 Text="Welcome to the WHM knockoff breathing app"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Welcome the WHM knockoff breathing app"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
@@ -42,7 +42,11 @@
                 Text="Start session"
                 SemanticProperties.Hint="Start a breathing session"
                 Clicked="OnSessionStartClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                Routing.Route="BreathingSession"/>
+            
+            <!--<FlyoutPage--> 
+            
 
         </VerticalStackLayout>
     </ScrollView>

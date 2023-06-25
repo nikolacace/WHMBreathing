@@ -7,16 +7,15 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void OnSessionStartClicked(object sender, EventArgs e)
+    private async void OnSessionStartClicked(object sender, EventArgs e)
     {
-        StartBtn.Text = $"Psyche!";
-
-        SemanticScreenReader.Announce(StartBtn.Text);
+        await Shell.Current.GoToAsync("breathingSession");
+        
     }
 
-    private void SettingsClicked(object sender, EventArgs e)
+    private async void SettingsClicked(object sender, EventArgs e)
     {
-        DisplayAlert("Settings clicked", "settings clicked", "cancel");
+        await Shell.Current.GoToAsync("settings");
     }
 }
 
